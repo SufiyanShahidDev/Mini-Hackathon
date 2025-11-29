@@ -1,28 +1,515 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Hackathon</title>
-    <link rel="stylesheet" href="style.css">
+    <title>R2R Care - Experience Unparalleled Care Management</title>
+
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,400;1,600&display=swap"
+        rel="stylesheet">
 
-    <!--Font Awesome  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Stylesheet -->
 
-    <!-- Bootstrap -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
-<body>
-    <Header>
 
-    </Header>
+<body>
+
+
+    <!-- topbar -->
+
+    <div class="topnav">Join Us on Discord. We have Lots of Information</div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container" style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+            <div class="logo">
+                <img src="assets/logo img.png" alt="R2R CARE">
+            </div>
+
+            <div class="nav-links">
+                <a href="#">Product</a>
+                <a href="#">Why us</a>
+                <a href="#">Solutions</a>
+                <a href="#">Company</a>
+                <a href="#">Resources</a>
+                <a href="#">Pricing</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="btn btn-primary">Book A Demo</button>
+                <button class="btn btn-outline">Login</button>
+            </div>
+
+            <button class="hidden-desktop" style="font-size: 1.5rem; color: #4B5563;">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-     <section>
+    <header class="hero">
+
+        <div class="container hero-content">
+            <div class="badge">
+                <img class="pulse-dot" src="assets/system-pic.png" alt="">
+                New update! Get our latest insights.
+            </div>
+
+            <h1 class="hero-title">
+                Experience Unparalleled Care <br class="hidden-mobile">
+                Management <span class="serif-italic">With Our Platform.</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Maximize Your Business's Potential: Unleash Strategic Innovations And Growth Strategies To Propel Your
+                Success Beyond Limits.
+            </p>
+
+            <div class="hero-cta">
+                <button class="btn btn-primary" style="padding: 0.875rem 2rem; font-size: 1rem;">Get 15 Day
+                    Trial</button>
+
+                <div class="avatar-group">
+                    <div class="avatar-stack">
+                        <img src="assets/review.png" alt="User">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Partners -->
+    <img src="assets/Hero Image.png" alt="Dashboard" class="dashboard-img">
+    <section class="partners">
+
+        <img src="assets/Background.png" alt="our partners">
+
+    </section>
+
+    <!-- Features Grid -->
+    <section class="features">
+        <div class="container">
+            <div class="text-center" style="max-width: 800px; margin: 0 auto;">
+                <h2 class="section-title">Smart Advantages For Smarter <span class="serif-italic">Growth</span></h2>
+                <p class="section-desc">
+                    Harness intelligent solutions that simplify your workflow and boost efficiency. These advantages
+                    empower your team to achieve sustainable growth with confidence.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Card 1 -->
+                <div class="feature-card">
+                    <div class="card-visual">
+                        <div style="width: 100%; height: 100%; background: #EFF6FF; position: relative;">
+                            <img src="assets/back-img.png" alt="">
+                            <div
+                                style="position: absolute; top: 1rem; left: 1rem; background: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.75rem; font-weight: 700; box-shadow: var(--shadow-sm);">
+                                Overview</div>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">Save Time & Cut Costs</h3>
+                    <p class="feature-text">Automate workflows, optimize resources, and improve efficiency—giving you
+                        more time for quality care while reducing expenses.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="feature-card">
+                    <div class="card-visual">
+                        <div style="width: 8rem; height: 8rem; border-radius: 50%;  ">
+                        </div>
+                        <img src="assets/card2.png" alt="">
+                    </div>
+                    <h3 class="feature-title">Personalized, Secure Care</h3>
+                    <p class="feature-text">Deliver individualized care while keeping sensitive data safe with robust
+                        security and compliance measures.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="feature-card">
+                    <div class="card-visual" style="gap: 1rem;">
+                        <div
+                            style=" border-radius: 0.5rem; width: 100%; height: 80%; display: flex; flex-direction: column; justify-content: center;">
+                            <img src="assets/card3.png" alt="">
+                        </div>
+
+                    </div>
+                    <h3 class="feature-title">Smarter Reporting & Insights</h3>
+                    <p class="feature-text">Generate comprehensive reports effortlessly and access real-time insights to
+                        stay compliant and make better decisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All-In-One section -->
+    <section class="split-section">
+        <div class="container split-container">
+            <div class="split-half img-container">
+                <img src="assets/Background (1).png" alt="Analytics"
+                    style="border-radius: 12px; box-shadow: var(--shadow-lg); width: 100%;">
+
+            </div>
+
+            <div class="split-half">
+                <h2 class="section-title">All-In-One Web App For <span class="serif-italic">Management</span>
+                </h2>
+                <p class="section-desc" style="margin: 0 0 2.5rem 0;">Manage everything from one powerful platform. Our
+                    all-in-one web app simplifies team coordination, client tracking, and reporting.</p>
+
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-icon icon-purple"><img src="assets/symbol1.png" alt=""></div>
+                        <div>
+                            <h4 style="font-weight: 700; margin-bottom: 0.25rem;">Team & Task Management:</h4>
+                            <p style="font-size: 0.875rem; color: #6B7280;">Organize teams, assign tasks, and
+                                collaborate seamlessly.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon icon-pink"><img src="assets/symbol2.png" alt=""></div>
+                        <div>
+                            <h4 style="font-weight: 700; margin-bottom: 0.25rem;">Client & Document Management:</h4>
+                            <p style="font-size: 0.875rem; color: #6B7280;">Track client needs and securely store
+                                documents with ease.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon icon-green"><img src="assets/symbol3.png" alt=""></div>
+                        <div>
+                            <h4 style="font-weight: 700; margin-bottom: 0.25rem;">Reports & Insights:</h4>
+                            <p style="font-size: 0.875rem; color: #6B7280;">Access reports instantly to drive smarter
+                                decisions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Split Section: Mobile App -->
+    <section class="split-section">
+        <div class="container split-container split-reverse">
+            <div class="split-half"
+                style="background: #F3E8FF; border-radius: 1.5rem; height: 500px; display: flex; justify-content: center; align-items: flex-end; overflow: hidden;">
+                <img src="assets/Background (2).png" alt="App"
+                    style="width: 100%; box-shadow: 0 -10px 40px rgba(0,0,0,0.1); transform: translateY(20px);">
+            </div>
+
+            <div class="split-half">
+                <h2 class="section-title">Smart Phone App <br /> For <span class="serif-italic">Candidate</span></h2>
+                <p class="section-desc" style="margin: 0 0 2.5rem 0;">Introducing our innovative Candidate App, designed
+                    to empower your care team with on-the-go care recording capabilities.</p>
+
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-icon icon-purple"><i class="fa-solid fa-microphone"></i></div>
+                        <div>
+                            <h4 style="font-weight: 700; margin-bottom: 0.25rem;">Record & Log Care</h4>
+                            <p style="font-size: 0.875rem; color: #6B7280;">Document everything from activities to
+                                incidents in real time.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon icon-pink"><i class="fa-solid fa-cloud-arrow-down"></i></div>
+                        <div>
+                            <h4 style="font-weight: 700; margin-bottom: 0.25rem;">Access All Info In One Place</h4>
+                            <p style="font-size: 0.875rem; color: #6B7280;">Client history, preferences, and handover
+                                notes at your fingertips.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon icon-green"><i class="fa-solid fa-list-check"></i></div>
+                        <div>
+                            <h4 style="font-weight: 700; margin-bottom: 0.25rem;">Stay Organized</h4>
+                            <p style="font-size: 0.875rem; color: #6B7280;">Manage tasks and priorities with smart to-do
+                                lists and team updates.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Purple Grid Info -->
+    <section class="purple-grid-section">
+        <div class="container">
+            <div class="text-center" style="max-width: 800px; margin: 0 auto;">
+                <h2 class="section-title" style="color: white;">Discover The Powerful Functionalities That Our
+                    <span class="serif-italic" style="color: white;">Platform Offers</span>
+                </h2>
+            </div>
+
+            <div class="grid-cards">
+                <div class="grid-card" style="background-color: #E9D5FF;">
+                    <div class="grid-icon"><img src="assets/cardsym1.png" alt=""></div>
+                    <h3 style="font-weight: 700; margin-bottom: 0.5rem; color: black;">Dashboard</h3>
+                    <p style="font-size: 0.875rem; color: black;">A real-time overview and easy access
+                        to important information.</p>
+                </div>
+                <div class="grid-card">
+                    <div class="grid-icon"><img src="assets/cardsym2.png" alt=""></div>
+                    <h3 style="font-weight: 700; margin-bottom: 0.5rem; color: white;">Statistics</h3>
+                    <p style="font-size: 0.875rem; color: rgba(255,255,255,0.7);">Helps to understand patterns and
+                        trends in overall data.</p>
+                </div>
+                <div class="grid-card">
+                    <div class="grid-icon"><i class="fa-solid fa-hand-pointer"></i><img src="assets/cardsym3.png"
+                            alt=""></div>
+                    <h3 style="font-weight: 700; margin-bottom: 0.5rem; color: white;">Easy Access</h3>
+                    <p style="font-size: 0.875rem; color: rgba(255,255,255,0.7);">Easy access to the platform for
+                        management, candidates, and clients.</p>
+                </div>
+                <div class="grid-card">
+                    <div class="grid-icon"><img src="assets/cardsym4.png" alt=""></div>
+                    <h3 style="font-weight: 700; margin-bottom: 0.5rem; color: white;">Task List Management</h3>
+                    <p style="font-size: 0.875rem; color: rgba(255,255,255,0.7);">Organizing and overseeing the
+                        assignments and activities related to tasks.</p>
+                </div>
+                <div class="grid-card">
+                    <div class="grid-icon"><img src="assets/cardsym5.png" alt=""></div>
+                    <h3 style="font-weight: 700; margin-bottom: 0.5rem; color: white;">Paperless</h3>
+                    <p style="font-size: 0.875rem; color: rgba(255,255,255,0.7);">Manage information, documents, and
+                        records digitally.</p>
+                </div>
+                <div class="grid-card">
+                    <div class="grid-icon"><img src="assets/cardsym6.png" alt=""></div>
+                    <h3 style="font-weight: 700; margin-bottom: 0.5rem; color: white;">Real-Time Notifications</h3>
+                    <p style="font-size: 0.875rem; color: rgba(255,255,255,0.7);">Receive timely updates and alerts to
+                        stay informed about critical events.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="features"> <!-- Reusing white bg section class -->
+        <div class="container">
+            <div class="text-center" style="max-width: 800px; margin: 0 auto 3rem;">
+                <h2 class="section-title">Choose Your Plan: <br /> Flexible <span class="serif-italic">Pricing
+                        Options</span></h2>
+                <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                    nec ullamcorper mattis.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Personal -->
+                <div class="pricing-card">
+                    <h3 style="font-size: 1.125rem; font-weight: 500; color: #4B5563; margin-bottom: 1rem;">Personal
+                    </h3>
+                    <div style="margin-bottom: 1.5rem;">
+                        <span class="price">$29.9</span> <span class="price-suffix">/Month</span>
+                    </div>
+                    <p style="font-size: 0.75rem; color: #6B7280; margin-bottom: 1.5rem;">Velit maximus habitasse
+                        himenaeos iaculis, dapibus justo orci neque conubia.</p>
+
+                    <div class="pricing-list">
+                        <p style="font-weight: 700; margin-bottom: 0.75rem;">Including:</p>
+                        <div class="pricing-item"><i class="fa-solid fa-check check-green"></i> Basic feature set</div>
+                        <div class="pricing-item"><i class="fa-solid fa-check check-green"></i> Limited usage or access
+                        </div>
+                        <div class="pricing-item"><i class="fa-solid fa-check check-green"></i> Access to advanced tools
+                        </div>
+                        <div class="pricing-item" style="color: #9CA3AF;"><i class="fa-solid fa-xmark"></i> Email and
+                            chat support</div>
+                        <div class="pricing-item" style="color: #9CA3AF;"><i class="fa-solid fa-xmark"></i> 24x7
+                            customer service</div>
+                    </div>
+                    <button class="btn btn-primary btn-full">Select Plan</button>
+                </div>
+
+                <!-- Pro -->
+                <div class="pricing-card popular">
+                    <div class="pop-badge">Popular</div>
+                    <h3
+                        style="font-size: 1.125rem; font-weight: 500; color: var(--color-primary); margin-bottom: 1rem;">
+                        Pro</h3>
+                    <div style="margin-bottom: 1.5rem;">
+                        <span class="price" style="color: var(--color-primary);">$59.9</span> <span
+                            class="price-suffix">/Month</span>
+                    </div>
+                    <p style="font-size: 0.75rem; color: #6B7280; margin-bottom: 1.5rem;">Velit maximus habitasse
+                        himenaeos iaculis, dapibus justo orci neque conubia.</p>
+
+                    <div class="pricing-list">
+                        <p style="font-weight: 700; margin-bottom: 0.75rem;">Including:</p>
+                        <div class="pricing-item"><i class="fa-solid fa-check check-brand"></i> Comprehensive feature
+                            set</div>
+                        <div class="pricing-item"><i class="fa-solid fa-check check-brand"></i> Expanded usage limits
+                        </div>
+                        <div class="pricing-item"><i class="fa-solid fa-check check-brand"></i> Access to advanced tools
+                        </div>
+                        <div class="pricing-item"><i class="fa-solid fa-check check-brand"></i> Email and chat support
+                        </div>
+                        <div class="pricing-item" style="color: #9CA3AF;"><i class="fa-solid fa-xmark"></i> 24x7
+                            customer service</div>
+                    </div>
+                    <button class="btn btn-primary btn-full" style="box-shadow: var(--shadow-lg);">Select Plan</button>
+                </div>
+
+                <!-- Business -->
+                <div class="pricing-card">
+                    <h3 style="font-size: 1.125rem; font-weight: 500; color: #4B5563; margin-bottom: 1rem;">Business
+                    </h3>
+                    <div style="margin-bottom: 1.5rem;">
+                        <span class="price">$129.9</span> <span class="price-suffix">/Month</span>
+                    </div>
+                    <p style="font-size: 0.75rem; color: #6B7280; margin-bottom: 1.5rem;">Velit maximus habitasse
+                        himenaeos iaculis, dapibus justo orci neque conubia.</p>
+
+                    <div class="pricing-list">
+                        <p style="font-weight: 700; margin-bottom: 0.75rem;">Including:</p>
+                        <div class="pricing-item"><i class="fa-solid fa-check check-green"></i> Fully customizable
+                            feature set</div>
+                        <div class="pricing-item"><i class="fa-solid fa-check check-green"></i> Dedicated account
+                            management</div>
+                        <div class="pricing-item"><i class="fa-solid fa-check check-green"></i> Scalable pricing options
+                        </div>
+                        <div class="pricing-item"><i class="fa-solid fa-check check-green"></i> Email and chat support
+                        </div>
+                        <div class="pricing-item"><i class="fa-solid fa-check check-green"></i> 24x7 customer service
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-full">Select Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <img src="assets/Conatinner (9).png" alt="">
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 3rem;">
+                <h2 class="section-title">Frequently Asked <span class="serif-italic">Questions</span></h2>
+                <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item active">
+                    <button class="faq-btn">
+                        <i class="fa-solid fa-chevron-up"></i>
+                        What is Nexify, and how can it help my business?
+
+                    </button>
+                    <div class="faq-content">
+                        Vel metus senectus ullamcorper sollicitudin auctor placerat maximus nec. Curabitur ligula metus
+                        platea velit, tellus vulputate enim in tempor.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-btn" style="background: white; color: #1F2937;">
+                        Can I integrate nexify with my existing tools?
+                        <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                    </button>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-btn" style="background: white; color: #1F2937;">
+                        What is the difference between the standard and pro plans?
+                        <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                    </button>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-btn" style="background: white; color: #1F2937;">
+                        How secure is my data with nexify?
+                        <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="cta-section">
+        <div>
+            <img src="assets/s-footer.png" alt="">
+        </div>
+
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>R2R Care</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Advantages</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Apps</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">App for Management</a></li>
+                        <li><a href="#">App for Candidate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Policies</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Data Protection Policy</a></li>
+                        <li><a href="#">Ethics Policy</a></li>
+                        <li><a href="#">Modern Anti-Slavery</a></li>
+                        <li><a href="#">Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-location-dot"
+                                style="margin-top: 0.25rem;"></i> 10, Skipper Close, Hemel Hempstead, HP2 7DG</li>
+                        <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-phone"></i> 07983410935</li>
+                        <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-envelope"></i> Dev@R2rcare.Co.Uk
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
         
-     </section>
+    </footer>
+
+    <div class="footer-bottom">
+                <div style="display: flex; align-items: center; gap: 0.5rem; ">
+                    <div style="background-color: rgba(255,255,255,0.1); padding: 0.25rem 0.5rem; border-radius: 4px;">
+                        <i class="fa-solid fa-staff-snake"></i>
+                    </div>
+                    <span style="font-weight: 700;">R2R CARE</span>
+                </div>
+
+                <p style="font-size: 0.75rem; color: rgba(255,255,255,0.6);">Copyright R2Rcare 2025. All right reserved
+                </p>
+
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            
+
 </body>
-<!-- ootstrap -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </html>
